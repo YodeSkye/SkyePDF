@@ -31,6 +31,7 @@ Partial Class PDF
         MIFile = New ToolStripMenuItem()
         CMIOpen = New ToolStripMenuItem()
         CMIClose = New ToolStripMenuItem()
+        ToolStripSeparator1 = New ToolStripSeparator()
         CMIExit = New ToolStripMenuItem()
         MIView = New ToolStripMenuItem()
         CMIRotate0 = New ToolStripMenuItem()
@@ -40,7 +41,6 @@ Partial Class PDF
         MIAbout = New ToolStripMenuItem()
         CMILog = New ToolStripMenuItem()
         CMIAbout = New ToolStripMenuItem()
-        ToolStripSeparator1 = New ToolStripSeparator()
         MenuPDF.SuspendLayout()
         SuspendLayout()
         ' 
@@ -55,7 +55,7 @@ Partial Class PDF
         PDFViewer.IsBookmarkEnabled = False
         PDFViewer.IsTextSearchEnabled = True
         PDFViewer.IsTextSelectionEnabled = True
-        PDFViewer.Location = New Point(0, 24)
+        PDFViewer.Location = New Point(0, 29)
         MessageBoxSettings1.EnableNotification = True
         PDFViewer.MessageBoxSettings = MessageBoxSettings1
         PDFViewer.MinimumZoomPercentage = 50
@@ -72,7 +72,7 @@ Partial Class PDF
         PDFViewer.ShowHorizontalScrollBar = True
         PDFViewer.ShowToolBar = True
         PDFViewer.ShowVerticalScrollBar = True
-        PDFViewer.Size = New Size(984, 737)
+        PDFViewer.Size = New Size(984, 732)
         PDFViewer.SpaceBetweenPages = 8
         PDFViewer.TabIndex = 0
         TextSearchSettings1.CurrentInstanceColor = Color.FromArgb(CByte(127), CByte(255), CByte(171), CByte(64))
@@ -86,10 +86,11 @@ Partial Class PDF
         ' 
         ' MenuPDF
         ' 
+        MenuPDF.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         MenuPDF.Items.AddRange(New ToolStripItem() {MIFile, MIView, MIAbout})
         MenuPDF.Location = New Point(0, 0)
         MenuPDF.Name = "MenuPDF"
-        MenuPDF.Size = New Size(984, 24)
+        MenuPDF.Size = New Size(984, 29)
         MenuPDF.TabIndex = 1
         ' 
         ' MIFile
@@ -98,28 +99,33 @@ Partial Class PDF
         MIFile.ForeColor = Color.White
         MIFile.Image = My.Resources.Resources.ImageFile16
         MIFile.Name = "MIFile"
-        MIFile.Size = New Size(53, 20)
+        MIFile.Size = New Size(62, 25)
         MIFile.Text = "File"
         ' 
         ' CMIOpen
         ' 
         CMIOpen.Image = My.Resources.Resources.ImageOpen16
         CMIOpen.Name = "CMIOpen"
-        CMIOpen.Size = New Size(103, 22)
+        CMIOpen.Size = New Size(118, 26)
         CMIOpen.Text = "Open"
         ' 
         ' CMIClose
         ' 
         CMIClose.Image = My.Resources.Resources.ImageExit16
         CMIClose.Name = "CMIClose"
-        CMIClose.Size = New Size(103, 22)
+        CMIClose.Size = New Size(118, 26)
         CMIClose.Text = "Close"
+        ' 
+        ' ToolStripSeparator1
+        ' 
+        ToolStripSeparator1.Name = "ToolStripSeparator1"
+        ToolStripSeparator1.Size = New Size(115, 6)
         ' 
         ' CMIExit
         ' 
         CMIExit.Image = My.Resources.Resources.ImageExit16
         CMIExit.Name = "CMIExit"
-        CMIExit.Size = New Size(103, 22)
+        CMIExit.Size = New Size(118, 26)
         CMIExit.Text = "Exit"
         ' 
         ' MIView
@@ -128,35 +134,35 @@ Partial Class PDF
         MIView.ForeColor = Color.White
         MIView.Image = My.Resources.Resources.ImageView16
         MIView.Name = "MIView"
-        MIView.Size = New Size(60, 20)
+        MIView.Size = New Size(72, 25)
         MIView.Text = "View"
         ' 
         ' CMIRotate0
         ' 
         CMIRotate0.Image = My.Resources.Resources.ImageRotate016
         CMIRotate0.Name = "CMIRotate0"
-        CMIRotate0.Size = New Size(138, 22)
+        CMIRotate0.Size = New Size(164, 26)
         CMIRotate0.Text = "No Rotation"
         ' 
         ' CMIRotate90
         ' 
         CMIRotate90.Image = My.Resources.Resources.ImageRotate9016
         CMIRotate90.Name = "CMIRotate90"
-        CMIRotate90.Size = New Size(138, 22)
+        CMIRotate90.Size = New Size(164, 26)
         CMIRotate90.Text = "Rotate 90°"
         ' 
         ' CMIRotate180
         ' 
         CMIRotate180.Image = My.Resources.Resources.ImageRotate18016
         CMIRotate180.Name = "CMIRotate180"
-        CMIRotate180.Size = New Size(138, 22)
+        CMIRotate180.Size = New Size(164, 26)
         CMIRotate180.Text = "Rotate 180°"
         ' 
         ' CMIRotate270
         ' 
         CMIRotate270.Image = My.Resources.Resources.ImageRotate27016
         CMIRotate270.Name = "CMIRotate270"
-        CMIRotate270.Size = New Size(138, 22)
+        CMIRotate270.Size = New Size(164, 26)
         CMIRotate270.Text = "Rotate 270°"
         ' 
         ' MIAbout
@@ -165,27 +171,22 @@ Partial Class PDF
         MIAbout.ForeColor = Color.White
         MIAbout.Image = My.Resources.Resources.ImageAbout16
         MIAbout.Name = "MIAbout"
-        MIAbout.Size = New Size(68, 20)
+        MIAbout.Size = New Size(80, 25)
         MIAbout.Text = "About"
         ' 
         ' CMILog
         ' 
         CMILog.Image = My.Resources.Resources.ImageLog16
         CMILog.Name = "CMILog"
-        CMILog.Size = New Size(107, 22)
+        CMILog.Size = New Size(122, 26)
         CMILog.Text = "Log"
         ' 
         ' CMIAbout
         ' 
         CMIAbout.Image = My.Resources.Resources.ImageAbout16
         CMIAbout.Name = "CMIAbout"
-        CMIAbout.Size = New Size(107, 22)
+        CMIAbout.Size = New Size(122, 26)
         CMIAbout.Text = "About"
-        ' 
-        ' ToolStripSeparator1
-        ' 
-        ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(100, 6)
         ' 
         ' PDF
         ' 

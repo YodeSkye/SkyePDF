@@ -255,7 +255,7 @@ Public Class PDF
         If IsFocused Then
             MenuPDF.BackColor = c
         End If
-        Debug.Print("Accent Color Set")
+        'Debug.Print("Accent Color Set")
     End Sub
     Private Sub SetInactiveColor()
         MenuPDF.BackColor = App.InactiveTitleBarColor

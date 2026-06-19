@@ -27,9 +27,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="SkyeLibrary" Version="1.4.60" />
-    <PackageReference Include="Syncfusion.Pdf.WinForms" Version="33.2.8" />
-    <PackageReference Include="Syncfusion.PdfViewer.Windows" Version="33.2.8" />
+    <PackageReference Include="SkyeLibrary" Version="1.4.66" />
+    <PackageReference Include="Syncfusion.Pdf.WinForms" Version="33.2.13" />
+    <PackageReference Include="Syncfusion.PdfViewer.Windows" Version="33.2.13" />
   </ItemGroup>
 
   <ItemGroup>
