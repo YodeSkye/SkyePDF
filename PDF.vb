@@ -59,7 +59,7 @@ Public Class PDF
 #End If
     End Sub
     Private Sub PDF_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
-        If e.Control AndAlso e.KeyCode = Keys.W Then
+        If e.KeyCode = Keys.Escape OrElse (e.Control AndAlso e.KeyCode = Keys.W) Then
             Close()
         End If
     End Sub
