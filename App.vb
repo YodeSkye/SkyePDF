@@ -30,7 +30,7 @@ Namespace My
             Skye.Common.RegistryHelper.BaseKey = "Software\\" + My.Application.Info.ProductName
 #End If
             WriteToLog(My.Application.Info.ProductName + " Started...", False)
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1JHaF5cWWdCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdlWXxfd3VURmlcU0ZzX0pWYEo=")
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjGyl/VkJ+XU9Gf1RLVGpAY1J0WGBYb1xzflBPallYT3RfQFtjTn1SdkxmWXpXdXNTRWtfVQ==")
             If My.Application.CommandLineArgs.Count > 0 Then
                 ProcessPassedParameters(My.Application.CommandLineArgs)
             End If
